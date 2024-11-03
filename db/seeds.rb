@@ -7,3 +7,19 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Product.delete_all
+product = Product.create(title: 'Ruby on Rails 8',
+  description:
+    %(<p>
+      <em>The Pragmatic Programmers' Guide</em>
+      Dive into the cutting-edge features and enhancements of Ruby on Rails 8 with this comprehensive guide. 
+      Ideal for both seasoned Rails developers and newcomers to web development, this book covers the latest updates, performance optimizations, and streamlined processes that make Rails 8 the most powerful version yet.
+    </p>),
+  price: 29.95)
+
+product.image.attach(io: File.open(
+  Rails.root.join('db', 'images', 'ror8-book.jpg')),
+    filename: 'ror8-book.jpg')
+
+product.save!
+# . . .
