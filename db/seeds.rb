@@ -12,7 +12,7 @@ product = Product.create(title: 'Ruby on Rails 8',
   description:
     %(<p>
       <em>The Pragmatic Programmers' Guide</em>
-      Dive into the cutting-edge features and enhancements of Ruby on Rails 8 with this comprehensive guide. 
+      Dive into the cutting-edge features and enhancements of Ruby on Rails 8 with this comprehensive guide.
       Ideal for both seasoned Rails developers and newcomers to web development, this book covers the latest updates, performance optimizations, and streamlined processes that make Rails 8 the most powerful version yet.
     </p>),
   price: 29.95)
