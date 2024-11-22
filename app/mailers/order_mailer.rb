@@ -7,7 +7,7 @@ class OrderMailer < ApplicationMailer
   #
   def received(order)
     @order = order
-    
+
     mail to: order.email, subject: "Rails Ocho Depot Store Order Confirmation"
   end
 
