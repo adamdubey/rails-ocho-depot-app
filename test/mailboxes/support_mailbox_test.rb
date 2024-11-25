@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "test_helper"
 
 class SupportMailboxTest < ActionMailbox::TestCase
@@ -35,7 +36,4 @@ class SupportMailboxTest < ActionMailbox::TestCase
      assert_equal "I can't figure out how to check out!!", support_request.body
      assert_equal recent_order, support_request.order
   end
-
-
-
 end
