@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   resources :support_requests, only: %i[ index update ]
-  
+
   resources :users
   resources :products do
     get :who_bought, on: :member
